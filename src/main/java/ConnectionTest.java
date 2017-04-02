@@ -1,3 +1,4 @@
+
 import org.neo4j.driver.v1.*;
 import org.apache.commons.lang.time.StopWatch;
 
@@ -25,7 +26,7 @@ public class ConnectionTest {
 
 
         System.out.println("The dept of one:");
-    for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 20; i++) {
         timer.reset();
         timer.start();
          // all persons that a person endorses, i.e., endorsements of depth one.
@@ -124,7 +125,7 @@ public class ConnectionTest {
 
 
 
-        /*System.out.println("The dept of five:");
+        System.out.println("The dept of five:");
         for (int i = 0; i < 20; i++) {
             timer.reset();
             timer.start();
@@ -141,7 +142,7 @@ public class ConnectionTest {
         avg = Cal.CalAvg(times);
         System.out.println("The Avg time: "+ avg +" ms");
         median = Cal.CalMedian(times);
-        System.out.println("The Median time: "+ median +" ms");*/
+        System.out.println("The Median time: "+ median +" ms");
 
 
 
