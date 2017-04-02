@@ -124,7 +124,7 @@ public class ConnectionTest {
 
 
 
-        System.out.println("The dept of five:");
+        /*System.out.println("The dept of five:");
         for (int i = 0; i < 20; i++) {
             timer.reset();
             timer.start();
@@ -141,71 +141,12 @@ public class ConnectionTest {
         avg = Cal.CalAvg(times);
         System.out.println("The Avg time: "+ avg +" ms");
         median = Cal.CalMedian(times);
-        System.out.println("The Median time: "+ median +" ms");
+        System.out.println("The Median time: "+ median +" ms");*/
 
 
 
 
 
-
-       // session.close();
-
-    /*    System.out.println();
-        System.out.println();
-        System.out.println("all persons that are endorsed by endorsed persons of a person, i.e., endorsements of depth two.");
-        // all persons that are endorsed by endorsed persons of a person, i.e., endorsements of depth two.
-        StatementResult result2 = session.run(
-                "MATCH (p:Person)-[:ENDORSES]->()-[:ENDORSES]->(e:Person)" +
-                        "WHERE p.id = 371001 " +
-                        "RETURN e.name as name");*/
-
-       /* while ( result2.hasNext() ) {
-            Record record = result2.next();
-            System.out.println( record.get("name").asString() );
-        }
-
-        System.out.println();
-        System.out.println();
-        System.out.println("endorsements of depth three.");
-
-        StatementResult result3 = session.run(
-                "MATCH (p:Person)-[:ENDORSES]->()-[:ENDORSES]->()-[:ENDORSES]->(e:Person)" +
-                        "WHERE p.id = 371001 " +
-                        "RETURN e.name as name");
-
-        while ( result3.hasNext() ) {
-            Record record = result3.next();
-            System.out.println( record.get("name").asString() );
-        }
-
-        System.out.println();
-        System.out.println();
-        System.out.println("endorsements of depth four.");
-
-        StatementResult result4 = session.run(
-                "MATCH (p:Person)-[:ENDORSES]->()-[:ENDORSES]->()-[:ENDORSES]->()-[:ENDORSES]->(e:Person)" +
-                        "WHERE p.id = 371001 " +
-                        "RETURN e.name as name");
-
-        while ( result4.hasNext() ) {
-            Record record = result4.next();
-            System.out.println( record.get("name").asString() );
-        }
-
-
-        System.out.println();
-        System.out.println();
-        System.out.println("endorsements of depth five.");
-*/
-       // StatementResult result5 = session.run(
-      //         "MATCH (p:Person)-[:ENDORSES]->()-[:ENDORSES]->()-[:ENDORSES]->()-[:ENDORSES]->()-[:ENDORSES]->(e:Person)" +
-       //                 "WHERE p.id = 371001 " +
-       //                 "RETURN e.name as name");
-
-      //  while ( result5.hasNext() ) {
-       //     Record record = result5.next();
-        //    System.out.println( record.get("name").asString() );
-       // }
 
 
         session.close();

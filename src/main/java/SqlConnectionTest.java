@@ -231,7 +231,7 @@ public class SqlConnectionTest {
         median = Cal.CalMedian(times);
         System.out.println("The Median time: "+ median +" ms");
 
-        System.in.read();
+        /*System.in.read();
 
         System.out.println("The dept of five:");
 
@@ -250,9 +250,9 @@ public class SqlConnectionTest {
                 st = con.createStatement();
                 rs = st.executeQuery(query);
 
-               /* if (rs.next()) {
+               *//* if (rs.next()) {
                     System.out.println(rs.getString(1));
-                }*/
+                }*//*
 
             } catch (SQLException ex) {
                 System.err.println(ex.getMessage());
@@ -283,6 +283,6 @@ public class SqlConnectionTest {
         median = Cal.CalMedian(times);
         System.out.println("The Median time: "+ median +" ms");
 
-        System.in.read();
+        System.in.read();*/
     }
 }
